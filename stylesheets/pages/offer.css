@@ -31,11 +31,9 @@ body {
 
 .header-txt h4 {
   margin-top: 48px;
-
   display: flex;
   width: 234px;
   align-items: center;
-
 }
 
 .header-title-ico {
@@ -45,8 +43,6 @@ body {
   background: url(../../assets/icon/shopping.svg) no-repeat;
   display: inline-block;
   margin: 0;
-
-
 }
 
 .header-title-ico+span {
@@ -58,7 +54,6 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 115%;
-  /* 27.6px */
 }
 
 /* 메인이미지영역 */
@@ -72,6 +67,7 @@ body {
 
 .common-inner {
   border: 1px solid red;
+  position: relative;
   width: 200px;
   height: 270px;
 }
@@ -84,61 +80,169 @@ body {
 .img-box {
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  outline: 1px solid blue;
+  width: 100%;
+  z-index: 1;
 }
 
 .img-box img {
   width: 160px;
   height: 160px;
-  flex-shrink: 0;
+  margin-left: 20px;
 }
+
 .common-inner:nth-child(1) .img-box,
 .common-inner:nth-child(4) .img-box,
 .common-inner:nth-child(5) .img-box {
-  padding: 14px 20px 12px 20px;
-
+  padding: 14px 20px 0px 20px;
 }
+
 .common-inner:nth-child(2) .img-box,
 .common-inner:nth-child(3) .img-box {
-  padding: 14px 14px 12px 14px;
+  padding: 14px 14px 0px 14px;
 }
 
 /* 할인뱃지 */
 .rate-box {
-  display: inline-flex;
   padding: 3px 10px;
-  align-items: flex-start;
-  gap: 10px;
   border-radius: 0px 0px 4px 0px;
   background: var(--Red-500, #E52330);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sale-badge {
+  color: var(--color-white);
+
+  /* (PC) / 캡션 */
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 .common-inner:nth-child(2) .rate-box,
 .common-inner:nth-child(3) .rate-box {
-  visibility: hidden;
+  display: block;
+  background: var(--color-white);
 }
 
+/* 텍스트상자 */
 .txt-box {
-  width: 200px;
+  outline: 1px solid orange;
+  width: 198px;
   height: 270px;
 }
 
-/* 제목상자 */
+.txt-list {
+  display: flex;
+  width: 172px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 14px 0 14px;
+}
+
+.common-inner:nth-child(1) .txt-list {
+  margin-bottom: 38px;
+}
+
+.common-inner:nth-child(2) .txt-list,
+.common-inner:nth-child(4) .txt-list {
+  margin-bottom: 18px;
+}
+
+.common-inner:nth-child(3) .txt-list,
+.common-inner:nth-child(5) .txt-list {
+  margin-bottom: 17px;
+}
 
 
+.title {
+  color: var(--Black, #181818);
 
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: -1px;
+  padding: 1px;
+  height: 17px;
 
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
+.delivery-group {
+  position: relative;
+  margin-top: 12px;
+}
 
+.delivery-txt {
+  color: var(--Gray-700, #767676);
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
 
+.delivery-group img {
+  margin: 0;
+  width: 55px;
+  height: 16px;
+}
 
+.delivery-txt {
+  margin: 0;
+}
 
+.review {
+  margin-top: 6px;
+  width: 100%;
+  height: 17px;
+  gap: 2px;
+}
 
+.rate-star {
+  width: 100%;
+  height: 17px;
+  overflow: hidden;
+}
 
+.rating-stars {
+  display: block;
+  float: left;
+  width: 68px;
+  height: 13px;
+  margin-right: 4px;
+  background: url(../../assets/sprites/rating-stars.png);
+}
 
+.common-inner:nth-child(1) .rating-stars,
+.common-inner:nth-child(2) .rating-stars {
+  background-position: 0 -126px;
+}
 
+.common-inner:nth-child(3) .rating-stars,
+.common-inner:nth-child(5) .rating-stars {
+  background-position: 0 -112px;
+}
+.common-inner:nth-child(4) .rating-stars {
+  background-position: 0 -139px;
+}
 
-
-
-
-
+.review-num {
+  display: block;
+  line-height: 12px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--Gray-700, #767676);
+}
