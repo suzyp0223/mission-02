@@ -244,7 +244,11 @@ body {
 
 .review-num {
   display: block;
-  line-height: 12px;
+  float: left;
+  width: 43px;
+  height: 13px;
+
+  line-height: 13px;
   font-family: "Noto Sans";
   font-size: 14px;
   font-style: normal;
