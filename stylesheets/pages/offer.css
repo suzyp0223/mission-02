@@ -16,6 +16,11 @@ body {
 
 .header-area {
   margin: 100px 957px 0 0;
+  width: 100%;
+}
+
+.logo-box {
+  margin: 100px 0px 48px 0;
 }
 
 .header-link {
@@ -30,7 +35,6 @@ body {
 }
 
 .header-txt h4 {
-  margin-top: 48px;
   display: flex;
   width: 234px;
   align-items: center;
@@ -233,6 +237,7 @@ body {
 .common-inner:nth-child(5) .rating-stars {
   background-position: 0 -112px;
 }
+
 .common-inner:nth-child(4) .rating-stars {
   background-position: 0 -139px;
 }
