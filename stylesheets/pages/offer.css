@@ -1,1 +1,144 @@
 /* 오늘의 쇼핑 제안 */
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: rgb(246, 255, 217);
+  margin: auto;
+  width: 1022px;
+  height: 354px;
+  position: relative;
+}
+
+.header-area {
+  margin: 100px 957px 0 0;
+}
+
+.header-link {
+  display: block;
+  width: 1022px;
+}
+
+.logo img {
+  width: 176px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.header-txt h4 {
+  margin-top: 48px;
+
+  display: flex;
+  width: 234px;
+  align-items: center;
+
+}
+
+.header-title-ico {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background: url(../../assets/icon/shopping.svg) no-repeat;
+  display: inline-block;
+  margin: 0;
+
+
+}
+
+.header-title-ico+span {
+  color: var(--Black, #181818);
+
+  /* Title/Medium/24 */
+  font-family: "Noto Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  /* 27.6px */
+}
+
+/* 메인이미지영역 */
+.item-area {
+  margin: 24px 0 30px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.common-inner {
+  border: 1px solid red;
+  width: 200px;
+  height: 270px;
+}
+
+.common-inner:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* 이미지상자 */
+.img-box {
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-box img {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+.common-inner:nth-child(1) .img-box,
+.common-inner:nth-child(4) .img-box,
+.common-inner:nth-child(5) .img-box {
+  padding: 14px 20px 12px 20px;
+
+}
+.common-inner:nth-child(2) .img-box,
+.common-inner:nth-child(3) .img-box {
+  padding: 14px 14px 12px 14px;
+}
+
+/* 할인뱃지 */
+.rate-box {
+  display: inline-flex;
+  padding: 3px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 0px 0px 4px 0px;
+  background: var(--Red-500, #E52330);
+}
+
+.common-inner:nth-child(2) .rate-box,
+.common-inner:nth-child(3) .rate-box {
+  visibility: hidden;
+}
+
+.txt-box {
+  width: 200px;
+  height: 270px;
+}
+
+/* 제목상자 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
