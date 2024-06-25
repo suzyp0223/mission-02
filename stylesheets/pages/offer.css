@@ -25,6 +25,7 @@ body {
 .header-link {
   display: block;
   width: 1022px;
+  margin-left: 2px;
 }
 
 .logo img {
