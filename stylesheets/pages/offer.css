@@ -1,5 +1,4 @@
 /* 오늘의 쇼핑 제안 */
-
 body {
   width: 100%;
   padding: 0;
@@ -44,15 +43,13 @@ body {
   width: 30px;
   height: 30px;
   flex-shrink: 0;
-  background: url(../../assets/icon/shopping.svg) no-repeat;
+  background: url(/assets/icon/shopping.svg) no-repeat;
   display: inline-block;
   margin: 0;
 }
 
 .header-title-ico+span {
   color: var(--color-back);
-
-  /* Title/Medium/24 */
   font-family: "Noto Sans";
   font-size: 24px;
   font-style: normal;
@@ -117,8 +114,6 @@ body {
 
 .sale-badge {
   color: var(--color-white);
-
-  /* (PC) / 캡션 */
   font-family: "Noto Sans";
   font-size: 16px;
   font-style: normal;
@@ -222,7 +217,7 @@ body {
   width: 68px;
   height: 13px;
   margin-right: 4px;
-  background: url(../../assets/sprites/rating-stars.png);
+  background: url(/assets/sprites/rating-stars.png);
 }
 
 .common-inner:nth-child(1) .rating-stars,
@@ -244,7 +239,6 @@ body {
   float: left;
   width: 43px;
   height: 13px;
-
   line-height: 13px;
   font-family: "Noto Sans";
   font-size: 14px;
